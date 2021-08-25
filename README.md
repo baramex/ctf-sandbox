@@ -9,14 +9,14 @@
 [![](https://img.shields.io/badge/author-baramex-red?style=for-the-badge)](https://github.com/baramex/)
 
 ## Requirements
-- Node js
+- [Node js](https://nodejs.org/en/download/)
 
 ## Installation
 - Unzip file
 - Open terminal in easy or hard ctf
 ```cmd
-> npm i
-> npm start
+npm i
+npm start
 ```
 - Go to http://localhost:8000/ (easy ctf) or http://localhost:8001/ (hard ctf)
 
