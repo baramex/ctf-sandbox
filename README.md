@@ -1,7 +1,7 @@
-## requirements
+## Requirements
 - node js
 
-## installation 
+## Installation 
 - unzip file
 - open terminal here
 ```cmd
@@ -10,9 +10,9 @@
 ```
 - Go to http://localhost:8000/
 
-## rules
+## Rules
 - Do not look at the source code
 - Do not touch/modify the source code
 
-## objectif
+## Objectif
 connect to the account with the email: baramex@gmail.com
