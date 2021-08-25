@@ -1,7 +1,3 @@
-[hard ctf: https://github.com/baramex/ctf-sandbox/tree/hard-ctf](https://github.com/baramex/ctf-sandbox/tree/hard-ctf)
-
-<h1>Easy CTF by baramex</h1>
-
 ## Infos
 [![](https://img.shields.io/github/languages/top/baramex/ctf-sandbox?style=for-the-badge)]()
 
@@ -13,20 +9,20 @@
 [![](https://img.shields.io/badge/author-baramex-red?style=for-the-badge)](https://github.com/baramex/)
 
 ## Requirements
-- node js
+- Node js
 
-## Installation 
-- unzip file
-- open terminal here
+## Installation
+- Unzip file
+- Open terminal in easy or hard ctf
 ```cmd
 > npm i
 > npm start
 ```
-- Go to http://localhost:8000/
+- Go to http://localhost:8000/ (easy ctf) or http://localhost:8001/ (hard ctf)
 
 ## Rules
 - Do not look at the source code
 - Do not touch/modify the source code
 
 ## Objectif
-connect to the account with the email: baramex@gmail.com
+- Connect to the account with the email: baramex@gmail.com
