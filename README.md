@@ -15,5 +15,4 @@
 - Do not touch/modify the source code
 
 ## objectif
-connect to the account:
-- email: baramex@gmail.com
+connect to the account with the email: baramex@gmail.com
