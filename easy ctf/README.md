@@ -13,7 +13,7 @@
 
 ## Installation 
 - Open terminal here
-```cmd
+```console
 npm i
 npm start
 ```
