@@ -14,7 +14,7 @@
 ## Installation
 - Unzip file
 - Open terminal in easy or hard ctf
-```cmd
+```console
 npm i
 npm start
 ```
