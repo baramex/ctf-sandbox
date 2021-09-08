@@ -1,4 +1,5 @@
 ## Infos
+[![](https://tokei.rs/b1/github/baramex/ctf-sandbox)]()<br/>
 [![](https://img.shields.io/github/languages/top/baramex/ctf-sandbox?style=for-the-badge)]()
 
 [![](https://img.shields.io/github/downloads/baramex/ctf-sandbox/total.svg?style=for-the-badge)](https://github.com/baramex/ctf-sandbox/releases/)
