@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF by baramex - home</title>
+    <link rel="icon" href="/utils/images/logos/favicon.png" />
+    <link rel="stylesheet" href="/libs/ajax - animate/animate.min.css" />
+
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/utils/main.css">
+    <script src="/utils/main.js"></script>
+</head>
+
+<body style="color: white;text-align: center;" onload="load();">
+    <script>
+        var temp_session = {};
+
+        socket.emit("getSession", null);
+
+        socket.on("getSessionResult", data => {
+            if (data.status == 200) {
+                temp_session = data.session;
+                socket.emit("getUserInfos", {
+                    email: data.session.email
+                });
+            } else {
+                document.cookie = 'userID=';
+                document.cookie = 'token=';
+                location.reload();
+            }
+        });
+
+        socket.on("getUserInfosResult", data => {
+            if (data.status == 200) {
+                if (temp_session.email == data.email) {
+                    document.body.innerHTML += "<h1 style='font-size: 45px;'>Logged in as <strong>" + data.pseudo + "</strong></h1>";
+                    document.body.innerHTML += "<a onclick=\"document.cookie='userID=';document.cookie='token=';location.reload();\" style='background-color: white;padding: 10px;font-size: 20px;cursor: pointer;border-radius: 5px;'>Log out</a>";
+                    document.body.innerHTML += '<footer><p class="footer bottomright">Cybersecurity ctf developed by <a href="https://github.com/baramex" target="_blank">Baramex</a> - <a href="mailto:contact@baramex.me">contact@baramex.me</a></p></footer>';
+
+                    //don't cheat on it^^
+                    if (temp_session.email == "baramex@gmail.com") {
+                        document.body.innerHTML += "<h1 id='gg' style='width: fit-content;margin-left: auto;margin-right: auto;color: gold;transition-duration: 1s;font-size: 35px;' class='animate__animated animate__tada'>GGGGGG!!! You are connected to the admin session!</h1>";
+                        var sc = document.createElement("script");
+                        sc.innerHTML = "setTimeout(() => {document.getElementById('gg').classList.remove('animate__tada');document.getElementById('gg').classList.add('animate__heartBeat');document.getElementById('gg').classList.add('animate__infinite');}, 1300);";
+                        document.body.appendChild(sc);
+                    }
+                }
+            } else {
+                document.cookie = 'userID=';
+                document.cookie = 'token=';
+                location.reload();
+            }
+        });
+    </script>
+</body>
+
+</html>
