@@ -1,13 +1,14 @@
+![img](https://user-images.githubusercontent.com/47333747/131183597-3976dcb0-0102-4858-9b6f-a5bc3073ba99.PNG)
+
 ## Requirements
-- Node js
+- [Node js](https://nodejs.org/en/download/)
 
 ## Installation 
-- Unzip
 - Open terminal here
-
-> npm i
-> npm start
-
+```console
+npm i
+npm start
+```
 - Go to http://localhost:8001/
 
 ## Rules
