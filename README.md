@@ -1,3 +1,5 @@
+# CTF by baramex
+
 ## Infos
 [![](https://tokei.rs/b1/github/baramex/ctf-sandbox)]()<br/>
 [![](https://img.shields.io/github/languages/top/baramex/ctf-sandbox?style=for-the-badge)]()
@@ -13,3 +15,22 @@
 
 ## Download
 [![](https://img.shields.io/github/v/release/baramex/ctf-sandbox?style=for-the-badge&label=last%20release)](https://github.com/baramex/ctf-sandbox/releases/latest/)
+
+## Requirements
+- [Node js](https://nodejs.org/en/download/)
+
+## Installation 
+- Download hard ctf.zip or easy ctf.zip and unzip it
+- Open terminal
+```console
+npm i
+npm start
+```
+- Go to http://localhost:8000/ (easy CTF) or http://localhost:8001/ (hard CTF)
+
+## Rules
+- Do not look at the source code
+- Do not touch/modify the source code
+
+## Objectif
+- Connect to the account with the email: baramex@gmail.com
